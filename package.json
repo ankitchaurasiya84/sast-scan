@@ -7,23 +7,31 @@
     "scan": "node index.js"
   },
   "keywords": [
-  "SAST",
-  "sast-scan",
-  "npm install sast-scan",
-  "security",
-  "code-scanner",
-  "vulnerability-scan",
-  "static-analysis",
-  "JavaScript",
-  "npm i sast-scanner",
-  "security-tool",
-  "code-security",
-  "vulnerability",
-  "npm i sast-scan"
-],
+    "SAST",
+    "sast-scan",
+    "npm install sast-scan",
+    "security",
+    "code-scanner",
+    "vulnerability-scan",
+    "static-analysis",
+    "JavaScript",
+    "npm i sast-scanner",
+    "security-tool",
+    "code-security",
+    "vulnerability",
+    "npm i sast-scan"
+  ],
   "author": "AnkitTechTalks",
   "license": "ISC",
   "description": "sast-scan is a lightweight static application security testing (SAST) tool designed for scanning JavaScript files. It helps developers identify and mitigate vulnerabilities in their code by performing a comprehensive security scan, providing an easy-to-use solution for improving code security in JavaScript applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankitchaurasiya84/sast-scan"
+  },
+  "bugs": {
+    "url": "https://github.com/ankitchaurasiya84/sast-scan/issues"
+  },
+  "homepage": "https://github.com/ankitchaurasiya84/sast-scan#readme",
   "dependencies": {},
   "devDependencies": {}
 }
