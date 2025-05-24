@@ -65,5 +65,4 @@ export default CodeScanner;
 
 </code></pre>
 <h2 class="code-line" data-line-start=92 data-line-end=93 ><a id="License_92"></a>License</h2>
-<p class="has-line-data" data-line-start="94" data-line-end="95">MIT License © 2024 [Ankit Chaurasiya]</p>
-<p class="has-line-data" data-line-start="96" data-line-end="97"><strong>Ankit Tech Talks!</strong></p>
+<p class="has-line-data" data-line-start="94" data-line-end="95">MIT License © 2025 [Ankit Chaurasiya]</p>
