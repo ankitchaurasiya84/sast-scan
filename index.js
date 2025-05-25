@@ -383,12 +383,6 @@ const scanCode = (code) => {
       fix: "Avoid using iframe allowmodals. Use safer alternatives.",
     },
     {
-      pattern:
-        /<iframe\s+.*alloworientationlock\s*=\s*['"`].*['"`]\s*><\/iframe>/,
-      message: "Using iframe alloworientationlock - potential for XSS",
-      fix: "Avoid using iframe alloworientationlock. Use safer alternatives.",
-    },
-    {
       pattern: /<iframe\s+.*allowpointerlock\s*=\s*['"`].*['"`]\s*><\/iframe>/,
       message: "Using iframe allowpointerlock - potential for XSS",
       fix: "Avoid using iframe allowpointerlock. Use safer alternatives.",
