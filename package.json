@@ -1,29 +1,46 @@
 {
   "name": "sast-scan",
-  "version": "1.3.1",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "A lightweight, extensible Static Application Security Testing (SAST) tool for JavaScript. Detects vulnerabilities like XSS, SQL injection, hardcoded secrets, prototype pollution, and more — with CWE references, severity ratings, and context-aware reporting.",
   "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./rules": "./src/rules.js",
+    "./scanner": "./src/scanner.js"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "scan": "node index.js"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "eslint src/ index.js",
+    "scan": "node index.js",
+    "start": "npm run scan"
   },
   "keywords": [
-    "SAST",
-    "sast-scan",
-    "npm install sast-scan",
+    "sast",
     "security",
-    "code-scanner",
-    "vulnerability-scan",
     "static-analysis",
-    "JavaScript",
-    "npm i sast-scanner",
-    "security-tool",
+    "vulnerability-scanner",
+    "javascript",
+    "xss",
+    "sql-injection",
     "code-security",
-    "vulnerability",
-    "npm i sast-scan"
+    "cwe",
+    "devsecops",
+    "appsec",
+    "linter",
+    "npm-security"
   ],
   "author": "Ankit Chaurasiya",
-  "license": "ISC",
-  "description": "sast-scan is a lightweight static application security testing (SAST) tool designed for scanning JavaScript files. It helps developers identify and mitigate vulnerabilities in their code by performing a comprehensive security scan, providing an easy-to-use solution for improving code security in JavaScript applications.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ankitchaurasiya84/sast-scan.git"
@@ -31,13 +48,16 @@
   "bugs": {
     "url": "https://github.com/ankitchaurasiya84/sast-scan/issues"
   },
-  "homepage": "https://dev.to/ankitchaurasiya84/introducing-sast-scan-a-lightweight-sast-tool-for-javascript-security-9km",
-  "documentation": "https://dev.to/ankitchaurasiya84/introducing-sast-scan-a-lightweight-sast-tool-for-javascript-security-9km",
+  "homepage": "https://github.com/ankitchaurasiya84/sast-scan#readme",
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/ankitchaurasiya84"
   },
-  "dependencies": {
-    "sast-scan": "^1.2.0"
-  }
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bin": {
+    "sast-scan": "./index.js"
+  },
+  "sideEffects": false
 }
