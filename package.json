@@ -1,6 +1,6 @@
 {
   "name": "sast-scan",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A lightweight, extensible Static Application Security Testing (SAST) tool for JavaScript. Detects vulnerabilities like XSS, SQL injection, hardcoded secrets, prototype pollution, and more — with CWE references, severity ratings, and context-aware reporting.",
   "type": "module",
   "main": "index.js",
